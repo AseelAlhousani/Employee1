@@ -1,0 +1,382 @@
+body {
+    background-color: rgb(236, 235, 230);
+}
+
+* {
+    border-radius: 0 !important;
+}
+
+/* تقليل المسافات الجانبية */
+.container {
+    max-width: 95%;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+
+/* تقليل المسافات بين الأعمدة اليمنى واليسرى */
+
+.separator {
+    width: 1px;
+    height: 100px;
+    background-color: #ccc;
+    margin: 0 10px;
+}
+
+.nav-tabs .nav-link {
+    font-size: 12px;
+    color: #333;
+    padding: 9px;
+}
+
+.nav-tabs .nav-link.active {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* تنسيق الـ navbar وتوزيع العناصر */
+.navbar-nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.navbar-nav .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-space{
+    width:11%;
+}
+
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 5px;
+    color: blue;
+}
+.container-fluid{
+    height: 82px;
+}
+
+.Annotate-icons .icons {
+    padding: 0 25px 0 60px;
+}
+.Annotate{
+    width:13%;
+}
+.Manage{
+    width:7%;
+}
+.large-empty-section{
+    width:50%;
+}
+
+
+/* تحسين تجاوب الـ navbar على الشاشات الصغيرة */
+@media (max-width: 991px) {
+    .separator {
+        display: none; /* إخفاء الـ separator في الشاشات الصغيرة */
+    }
+
+    /* تخصيص عرض الأعمدة على الشاشات الصغيرة */
+    .col-lg-8, .col-lg-4 {
+        padding: 0 15px;  /* إضافة مسافة للحواف على الشاشات المتوسطة */
+    }
+   background-color: #007bff;
+    }
+    /* تخصيص التنسيق للعناصر في navbar */
+    .nav-item {
+        margin: 2px 0;  /* إضافة مسافة بين العناصر */
+    }
+
+    /* جعل الزر يأخذ عرض كامل على الشاشات الصغيرة */
+    .btn {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .employee-image {
+        width: 100%;  /* تأكد من أن الصورة تأخذ العرض الكامل للحاوية */
+        max-width: 250px;  /* تحديد أقصى عرض للصورة */
+        height: auto;
+        object-fit: contain;
+        margin-right: 0px ;
+
+    }
+
+    /* تخصيص البطاقة */
+    .card {
+        margin-bottom: 20px; /* إضافة مسافة أسفل البطاقة لتجنب التلاصق */
+    }
+}
+
+/* تخصيص الشاشات الصغيرة جدًا (مثل الهواتف) */
+@media (max-width: 576px) {
+    .navbar-nav {
+        width: 100%;  /* تأكد من أن عناصر الـ navbar تأخذ العرض الكامل */
+    }
+    .container-fluid{
+        height: 1%;
+    }
+    
+ 
+    .icons {
+        justify-content: space-evenly;  /* توزيع الأيقونات بشكل متساوي */
+        padding: 0;
+    }
+
+    .employee-info {
+        font-size: 14px;  /* تقليل حجم الخط على الشاشات الصغيرة */
+    }
+
+    .separator {
+        display: none;  /* إخفاء الخط العمودي بين الأقسام في الشاشات الصغيرة */
+    }
+
+   
+}
+
+/* تحسين ترتيب العناصر في الشريط العلوي في الشاشات الصغيرة */
+@media (max-width: 767px) {
+    /* جعل الأزرار تتناسب مع الشاشات الصغيرة */
+    button {
+        width: 100%;
+        margin-top: 15px;
+        font-size: 14px;
+    }
+}
+.container-fluid{
+    height: 1%;
+}
+
+
+    /* تحسين النصوص داخل البطاقة */
+    .employee-info strong {
+        font-size: 11px;
+    }
+
+    .employee-info span {
+        font-size: 12px;
+    }
+
+    /* تحسين عرض شريط التوظيف */
+    .card-header {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+
+
+/* تحسين البطاقات */
+.card-header {
+    font-size: 12px;
+    padding: 15px;
+    background-color: white;
+    margin-bottom: 20px;
+    border-bottom: 0;
+}
+
+.card-body {
+    background-color: white;
+    padding: 15px;
+}
+
+
+
+.body-card span {
+    color: #212529bf;
+}
+
+.card-body1 {
+    background-color: white;
+}
+
+.card-body1 p {
+    padding-top: 15px;
+    padding-left: 15px;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.card-body1 span {
+    padding-left: 10px;
+}
+
+.text-primary {
+    font-size: 15px;
+    text-decoration: none;
+}
+
+/* تحسين شريط Hired و Division */
+.employee-info {
+    text-align: center;
+}
+
+.fa-envelope {
+    color: white;
+}
+
+.fa-dot-circle {
+    padding-left: 15px;
+    color: rgb(12, 169, 12);
+    font-size: 15px;
+}
+
+button {
+    margin-top: 22px;
+    border-radius: 3px !important;
+}
+
+.body-card .bttn {
+    color: white;
+}
+
+.employee-info strong {
+    display: block;
+    font-size: 12px;
+    color: #6c757d;
+    font-weight: normal;
+}
+
+.employee-info span {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* تحسين عرض صورة الموظف */
+.employee-img {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    border: 1px solid grey;
+    border-radius: 0 !important;
+}
+
+/* جعل الصورة تتناسب مع الشاشات الصغيرة */
+@media (max-width: 576px) {
+    .employee-img {
+        width: 200px;
+        height: 180px;
+        margin-right: 0px !important;
+ }
+
+}
+@media (max-width: 502px) {
+    .card-header {
+       display: flex;
+       flex-direction: column;
+       border: 1px solid #ccc;
+    }
+
+
+    
+
+}
+/* تحسين لون الشارة */
+.badge {
+    color: black;
+    font-size: 14px;
+}
+
+/* تحسين شريط التوظيف */
+.status {
+    background: none;
+    padding: 10px;
+}
+
+.status .text-success {
+    font-size: 16px;
+}
+
+/* تحسين تجاوب الشريط العلوي مع الشاشات الصغيرة */
+.top-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.annotate-manage {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.annotate,
+.manage {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hiring-stage {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+
+@media (min-width: 768px) {
+    .top-section {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hiring-stage {
+        width: auto;
+    }
+  
+    
+}
+
+.scroll-always {
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: 1px solid #ccc;
+}
+
+.scroll-always2 {
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: 1px solid #ccc;
+}
+
+/* تعديل الشريط العلوي بناءً على طلبك */
+
+/* تعديل الشريط العلوي - إضافة الأيقونات بجانب Hired و Division */
+.navbar .employee-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* المسافة بين الأيقونة والكلمة */
+}
+
+.navbar .employee-info i {
+    font-size: 16px; /* حجم الأيقونة */
+}
+
+.navbar .employee-info .badge {
+    margin-left: 5px; /* إضافة مسافة بين الشعار والكلمة */
+}
+
+
+.content {
+    border: none !important;
+}
+
+/* تحسين الشاشات التي تقل عن 530px */
